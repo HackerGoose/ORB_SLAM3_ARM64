@@ -1,0 +1,94 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/aarch64-linux-gnu-gcc
+-- Check for working C compiler: /usr/bin/aarch64-linux-gnu-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/aarch64-linux-gnu-g++
+-- Check for working CXX compiler: /usr/bin/aarch64-linux-gnu-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenCV: /home/arkr/ORB_SLAM3_ARM64/build/external/opencv (found version "4.12.0") 
+-- BUILD TYPE:Release
+-- Compiling on Unix
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+-- Found OpenMP: TRUE (found version "4.5")  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/arkr/ORB_SLAM3_ARM64/build
+Scanning dependencies of target DBoW2
+[  1%] Building CXX object Thirdparty/DBoW2/CMakeFiles/DBoW2.dir/DBoW2/BowVector.cpp.o
+[  2%] Building CXX object Thirdparty/DBoW2/CMakeFiles/DBoW2.dir/DBoW2/FORB.cpp.o
+[  4%] Building CXX object Thirdparty/DBoW2/CMakeFiles/DBoW2.dir/DBoW2/FeatureVector.cpp.o
+[  5%] Building CXX object Thirdparty/DBoW2/CMakeFiles/DBoW2.dir/DBoW2/ScoringObject.cpp.o
+[  7%] Building CXX object Thirdparty/DBoW2/CMakeFiles/DBoW2.dir/DUtils/Random.cpp.o
+[  8%] Building CXX object Thirdparty/DBoW2/CMakeFiles/DBoW2.dir/DUtils/Timestamp.cpp.o
+[ 10%] Linking CXX shared library ../../../Thirdparty/DBoW2/lib/libDBoW2.so
+[ 10%] Built target DBoW2
+Scanning dependencies of target g2o
+[ 11%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/types/types_sba.cpp.o
+[ 13%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/types/types_six_dof_expmap.cpp.o
+[ 14%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/types/types_seven_dof_expmap.cpp.o
+[ 15%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/hyper_graph_action.cpp.o
+[ 17%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/hyper_graph.cpp.o
+[ 18%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/marginal_covariance_cholesky.cpp.o
+[ 20%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/matrix_structure.cpp.o
+[ 21%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/batch_stats.cpp.o
+[ 23%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/parameter.cpp.o
+[ 24%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/cache.cpp.o
+[ 26%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/optimizable_graph.cpp.o
+[ 27%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/solver.cpp.o
+[ 28%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_factory.cpp.o
+[ 30%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/estimate_propagator.cpp.o
+[ 31%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/factory.cpp.o
+[ 33%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/sparse_optimizer.cpp.o
+[ 34%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/hyper_dijkstra.cpp.o
+[ 36%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/parameter_container.cpp.o
+[ 37%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/optimization_algorithm.cpp.o
+[ 39%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_with_hessian.cpp.o
+[ 40%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_levenberg.cpp.o
+[ 42%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/optimization_algorithm_gauss_newton.cpp.o
+[ 43%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/jacobian_workspace.cpp.o
+[ 44%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/robust_kernel.cpp.o
+[ 46%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/robust_kernel_factory.cpp.o
+[ 47%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/core/robust_kernel_impl.cpp.o
+[ 49%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/stuff/timeutil.cpp.o
+[ 50%] Building C object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/stuff/os_specific.c.o
+[ 52%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/stuff/string_tools.cpp.o
+[ 53%] Building CXX object Thirdparty/g2o/CMakeFiles/g2o.dir/g2o/stuff/property.cpp.o
+[ 55%] Linking CXX shared library ../../../Thirdparty/g2o/lib/libg2o.so
+[ 55%] Built target g2o
+Scanning dependencies of target orbslam3-arm64
+[ 56%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/Atlas.cc.o
+[ 57%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/CameraModels/KannalaBrandt8.cpp.o
+[ 59%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/CameraModels/Pinhole.cpp.o
+[ 60%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/Config.cc.o
+[ 62%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/Converter.cc.o
+[ 63%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/Frame.cc.o
+[ 65%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/FrameDrawer.cc.o
+[ 66%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/G2oTypes.cc.o
+[ 68%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/GeometricTools.cc.o
+[ 69%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/ImuTypes.cc.o
+[ 71%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/KeyFrame.cc.o
+[ 72%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/KeyFrameDatabase.cc.o
+[ 73%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/LocalMapping.cc.o
+[ 75%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/LoopClosing.cc.o
+[ 76%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/MLPnPsolver.cpp.o
+[ 78%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/Map.cc.o
+[ 79%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/MapDrawer.cc.o
+[ 81%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/MapPoint.cc.o
+[ 82%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/ORBextractor.cc.o
+[ 84%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/ORBmatcher.cc.o
+[ 85%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/OptimizableTypes.cpp.o
+[ 86%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/Optimizer.cc.o
+[ 88%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/Settings.cc.o
+[ 89%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/Sim3Solver.cc.o
+[ 91%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/System.cc.o
+[ 92%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/Tracking.cc.o
+[ 94%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/TwoViewReconstruction.cc.o
+[ 95%] Building CXX object CMakeFiles/orbslam3-arm64.dir/src/Viewer.cc.o

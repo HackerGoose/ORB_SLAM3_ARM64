@@ -1,0 +1,13 @@
+prefix=/home/arkr/ORB_SLAM3_ARM64/Thirdparty/openssl-3.4.0/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include 
+enginesdir=${libdir}/install/lib/engines-3
+modulesdir=${libdir}/install/lib/ossl-modules
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 3.4.0
+Libs: -L${libdir} -lcrypto
+Libs.private: -ldl -pthread
+Cflags: -I${includedir}

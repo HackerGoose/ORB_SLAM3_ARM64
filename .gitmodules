@@ -1,0 +1,6 @@
+[submodule "Thirdparty/Pangolin"]
+	path = Thirdparty/Pangolin
+	url = https://github.com/stevenlovegrove/Pangolin
+[submodule "Thirdparty/opencv"]
+	path = Thirdparty/opencv
+	url = https://github.com/opencv/opencv.git
