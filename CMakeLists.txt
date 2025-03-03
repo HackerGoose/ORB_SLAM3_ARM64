@@ -15,8 +15,13 @@ set(OpenCV_DIR ${PROJECT_SOURCE_DIR}/build/external/opencv)
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
+# Define the destination directory
+set(LIB_DESTINATION ${CMAKE_BINARY_DIR}/libs)
+
 # g2o
+
 add_subdirectory(Thirdparty/g2o)
+file(COPY ${CMAKE_SOURCE_DIR}/Thirdparty/g2o/lib/libg2o.so DESTINATION ${LIB_DESTINATION})
 add_library(${PROJECT_NAME} SHARED ${SRC_LIST})
 # target_link_libraries( ${PROJECT_NAME} log)
 # Eigen
@@ -26,8 +31,7 @@ include_directories(Thirdparty/eigen/Eigen/src)
 # Sophus
 include_directories(Thirdparty/Sophus)
 
-# Define the destination directory
-set(LIB_DESTINATION ${CMAKE_BINARY_DIR}/libs)
+
 
 # Create the destination directory
 file(MAKE_DIRECTORY ${LIB_DESTINATION})
@@ -61,10 +65,18 @@ set_target_properties(boost_serialization PROPERTIES IMPORTED_LOCATION
 ${LIB_DESTINATION}/libboost_serialization.a)
 set_target_properties(${PROJECT_NAME} PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
-target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} DBoW2 g2o crypto ssl boost_system boost_atomic boost_serialization)
+
 # DBoW2
+file(COPY ${CMAKE_SOURCE_DIR}/Thirdparty/DBoW2/lib/libDBoW2.so DESTINATION ${LIB_DESTINATION})
 add_subdirectory(Thirdparty/DBoW2)
+
+set_target_properties(DBoW2 PROPERTIES IMPORTED_LOCATION        
+${LIB_DESTINATION}/libDBoW2.so)
+set_target_properties(g2o PROPERTIES IMPORTED_LOCATION        
+${LIB_DESTINATION}/libg2o.so)
 # set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Stereo-Inertial)
+
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS} DBoW2 g2o crypto ssl boost_system boost_atomic boost_serialization)
 
 add_executable(stereo_inertial_euroc
         Examples/Stereo-Inertial/stereo_inertial_euroc.cc)
